@@ -17,7 +17,7 @@
     --color-dg-navy: #1368B1;
     --color-green: #79C344;
     --transition: .3s;
-    --transition2: .6s;
+    --transition2: .5s;
 }
 
 body {
@@ -242,12 +242,19 @@ button:hover {
 
 .about_bottom {
     width: 110%;
+    height: 0;
+    opacity: 0;
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     place-content: start;
     place-items: start;
+    transition: var(--transition2) !important;
+}
+
+.show_diff {
+    height: 100%;
+    opacity: 1;
 }
 
 .diff_box {
@@ -259,6 +266,7 @@ button:hover {
     padding: 30px;
     border: 1.5px solid #1367b1d6;
     border-radius: 15px;
+    box-shadow: 0 0 20px rgba(60, 60, 60, 0.2);
 }
 
 .diff_box h2 {
