@@ -66,6 +66,7 @@ nav {
     opacity: 0;
     animation: fade .3s forwards linear;
 }
+
 @keyframes fade {
     100% {
         opacity: 1;
@@ -122,8 +123,8 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-dark);
-    color: var(--color-dg-navy);
+    background-color: var(--color-dg-navy);
+    color: var(--color-main);
     transition: var(--transition);
 }
 
@@ -363,6 +364,7 @@ button:hover {
 
 .address_det {
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -429,3 +431,32 @@ button:hover {
     color: var(--color-light);
     cursor: pointer;
 }
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+
+.footer_social i {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dg-navy);
+    color: var(--color-main);
+    transition: var(--transition);
+}
+
+
+.footer_social i:hover {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    cursor: pointer;
+}
+
+/* Media Query */
