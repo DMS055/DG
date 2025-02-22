@@ -20,7 +20,7 @@ diffBtn.addEventListener("click", () => {
 diffBtn.addEventListener("click", () => {
 	if (diffDet.classList.contains("show_diff")) {
 		window.scroll({
-			top: 1200,
+			top: 1000,
 			behavior: "smooth",
 		});
 	}
