@@ -23,6 +23,7 @@
 body {
     overflow-x: hidden;
     background-color: var(--color-main);
+    width: 100%;
 }
 
 section {
@@ -38,19 +39,21 @@ header {
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
-    /*background-image: url(img/hero3.jpg);*/
+    background-image: url(img/bg-img.jpg);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: bottom center;
+    border-bottom-right-radius: 50% 16%;
+    border-bottom-left-radius: 50% 16%;
 }
 
 nav {
+    
     width: 100%;
     height: 6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 12%;
-    background-color: var(--color-main);
 }
 
 .sticky_nav {
@@ -217,10 +220,6 @@ button:hover {
     color: var(--color-dark);
 }
 
-.about_content h1 span {
-    color: var(--color-dg-navy);
-}
-
 .about_content p {
     font-size: 1.1rem;
     color: hsl(0, 0%, 45%);
@@ -279,6 +278,8 @@ button:hover {
 .services {
     flex-direction: column;
     background-color: hsl(220, 7%, 95%);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .headings {
@@ -306,37 +307,31 @@ button:hover {
     margin-top: 50px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
 }
 
 .service_card {
+    z-index: 1000;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
     gap: 10px;
 }
 
 .service_card i {
-    font-size: 1.9rem;
-    width: 140px;
-    height: 65px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1.5px solid var(--color-dg-navy);
+    font-size: 1.2rem;
+    padding-right: 10px;
     color: var(--color-dg-navy);
     transition: var(--transition);
 }
 
-.service_card:hover i {
-    background-color: var(--color-dg-navy);
-    color: var(--color-main);
-    cursor: pointer;
+.service_card:hover {
+    cursor: pointer !important;
 }
 
 .service_card_det {
+    width: 100%;
     padding-left: 10px;
     display: flex;
     flex-direction: column;
@@ -350,7 +345,9 @@ button:hover {
     color: var(--color-dg-navy);
 }
 
-.service_card_det p{
+.service_card_det li{
+    list-style: inside;
+    list-style-position: outside;
     font-size: 1rem;
     font-weight: 500;
     color: var(--color-dark);

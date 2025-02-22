@@ -14,7 +14,16 @@ const options = {
 var typed = new Typed("#text", options);
 
 diffBtn.addEventListener("click", () => {
-    diffDet.classList.toggle("show_diff");
+	diffDet.classList.toggle("show_diff");
+});
+
+diffBtn.addEventListener("click", () => {
+	if (diffDet.classList.contains("show_diff")) {
+		window.scroll({
+			top: 1200,
+			behavior: "smooth",
+		});
+	}
 });
 
 window.addEventListener("scroll", () => {
