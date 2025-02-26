@@ -113,6 +113,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 20px;
+    margin-left: 10px;
 }
 
 .social_icon i {
@@ -360,6 +361,40 @@ button:hover {
     color: var(--color-dark);
 }
 
+.bio {
+    gap: 50px;
+}
+
+.bio_image {
+    margin-top: 5%;
+    width: 60%;
+}
+
+.bio_image img {
+    width: 100%;
+    height: 100%;
+}
+
+.bio_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.bio_content h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.bio_content p {
+    font-size: 0.9rem;
+    line-height: 15px;
+    color: hsl(0, 0%, 32%);
+}
 
 .contact {
     flex-direction: column;
@@ -543,4 +578,35 @@ button:hover {
     .about_top {
         flex-direction: column;
     }
+
+    .about_content,
+    .headings {
+        width: 100%;
+    }
+
+    .footer {
+        gap: 30px;
+    }
+}
+
+.wip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--color-main);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 980px) {  
+header, section {
+  display: none;
+ }
+}
+
+@media only screen and (min-width: 980px) {  
+.wip {
+  display: none;
+ }
 }
