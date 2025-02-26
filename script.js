@@ -1,6 +1,8 @@
 let nav = document.querySelector("nav");
 let diffBtn = document.querySelector(".diff_btn");
 let diffDet = document.querySelector(".about_bottom");
+let bars = document.querySelector(".bars");
+let menu = document.querySelector(".menu");
 
 const options = {
 	strings: ["Ekspert.", "Partner.", "Najlepszy wybór."],
@@ -32,4 +34,8 @@ window.addEventListener("scroll", () => {
 	} else {
 		nav.classList.remove("sticky_nav");
 	}
+});
+
+bars.addEventListener("click", () => {
+    menu.classList.toggle("show_nav");
 });
